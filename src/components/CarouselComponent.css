@@ -1,0 +1,59 @@
+/* CarouselComponent.css */
+
+/* Base styles for the carousel item */
+.carousel-item {
+    position: relative;
+    height: 50vh; /* Default height (for mobile devices) */
+    min-height: 300px; /* Minimum height to prevent it from collapsing on small screens */
+  }
+  
+  .carousel-img {
+    object-fit: cover; /* Ensures the image covers the entire container */
+    height: 100%; /* Makes sure the image height stretches to fill the container */
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 576px) {
+    .carousel-item {
+      height: 40vh; /* Adjusts height for small mobile screens */
+    }
+  
+    .carousel-caption h3 {
+      font-size: 1.5rem; /* Smaller caption on mobile */
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Tablets & Small Laptops (up to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .carousel-item {
+      height: 50vh; /* Medium screen (tablets, small laptops) */
+    }
+  
+    .carousel-caption h3 {
+      font-size: 1.8rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Laptops & Desktops (Above 768px) */
+  @media (min-width: 769px) {
+    .carousel-item {
+      height: 83vh; /* Larger height for laptops and desktops */
+    }
+  
+    .carousel-caption h3 {
+      font-size: 2rem; /* Larger font size for captions on larger screens */
+    }
+  
+    .carousel-caption p {
+      font-size: 1.25rem;
+    }
+  }
+  

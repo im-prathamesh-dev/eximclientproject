@@ -77,7 +77,7 @@ const Navbar = () => {
         <Link to="/services" className="mobile-nav-link" onClick={closeMobileMenu}>Services</Link>
         <Link to="/contact" className="mobile-nav-link" onClick={closeMobileMenu}>Contact</Link>
         <button onClick={toggleDarkMode} className="mobile-dark-mode-btn">
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          {darkMode ? "☀️" : "🌙"}
         </button>
       </div>
     </nav>
